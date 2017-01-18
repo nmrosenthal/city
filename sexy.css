@@ -3,29 +3,30 @@
     margin: 4%;
     text-align: center;
     padding: 1%;
+    font-size: 20px;
 
 }
 
 #header-img {
     margin-bottom: 4%;
     margin-top: 4%;
+    padding: 5px;
     width: 75px;
     height: 50px;
-}
-
-/*#home-icon {*/
-    /*margin-left: 2000%;*/
-    /*width: 40px;*/
-    /*height: 40px;*/
-/*}*/
-.navbar-brand {
-    font-family: "Times New Roman", Georgia, Serif;
-    display: inline-block;
 
 }
 
 #title {
     margin-left: 20px;
+    font-size: 25px;
+    color: black;
+    text-shadow: 2px 2px 8px #5F9EA0;
+}
+
+.navbar-brand {
+    font-family: "Times New Roman", Georgia, Serif;
+    display: inline-block;
+
 }
 
 #map {
@@ -33,7 +34,9 @@
     width: 100%;
 }
 
+
 .btn-primary {
     margin-top: 1%;
+    display: inline-block;
 }
 
