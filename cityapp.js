@@ -23,7 +23,7 @@
 		      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
     		}
 		}).done(function(data){
-			$("#notification").text("Retrieved " + data.length + " records from the dataset!");
+			$("#notification").text("Retrieved " + data.length + " Records from the Data Set!");
 			for (i in data) {
 				// console.log(data[i].description);
 				// console.log(data[i].date_of_stop);

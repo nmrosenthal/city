@@ -7,7 +7,7 @@
 
 }
 
-#header-img {
+.header-img {
     margin-bottom: 4%;
     margin-top: 4%;
     padding: 5px;
@@ -25,7 +25,7 @@
 
 .navbar-brand {
     font-family: "Times New Roman", Georgia, Serif;
-    display: inline-block;
+    display: block;
 
 }
 
@@ -35,8 +35,51 @@
 }
 
 
-.btn-primary {
-    margin-top: 1%;
+h4{
+    margin-bottom:-1%;
+    color: white;
+    font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+#notification {
+    font-size: 20px;
+    color: white;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+.date-container {
+    display:inline-block;
+    margin-right: 6%;
+}
+
+
+.time-container {
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.boxStyling {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.btn-primary {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    color: white;
+    border-radius: 4px;
+    display: block;
+
+
+}
+
+body {
+    background-color: black;
 }
 
