@@ -1,31 +1,12 @@
-html {
-    /*background-color: black;*/
-}
-#container {
-    margin:4%;
+    #map {
+        height: 400px;
+        width: 100%;
+       }
 
-}
-#header-img {
-    margin-bottom: 10px;
-    width: 75px;
-    height: 50px;
-}
-.navbar-brand {
-    font-family: "Times New Roman", Georgia, Serif;
-    display: inline-block;
-
+input{
+    padding: 5px;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
-#title {
-    margin-left: 20px;
-}
-
-#map {
-    height: 400px;
-    width: 100%;
-}
-
-#notification {
-    /*margin: 5%;*/
-}
 
