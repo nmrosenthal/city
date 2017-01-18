@@ -1,15 +1,21 @@
-html {
-    /*background-color: black;*/
-}
+
 #container {
-    margin:4%;
+    margin: 4%;
 
 }
+
 #header-img {
-    margin-bottom: 10px;
+    margin-bottom: 4%;
+    margin-top: 4%;
     width: 75px;
     height: 50px;
 }
+
+/*#home-icon {*/
+    /*margin-left: 2000%;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+/*}*/
 .navbar-brand {
     font-family: "Times New Roman", Georgia, Serif;
     display: inline-block;
