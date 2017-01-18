@@ -1,6 +1,8 @@
 
 #container {
     margin: 4%;
+    text-align: center;
+    padding: 1%;
 
 }
 
@@ -31,7 +33,7 @@
     width: 100%;
 }
 
-#notification {
-    /*margin: 5%;*/
+.btn-primary {
+    margin-top: 1%;
 }
 
