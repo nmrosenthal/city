@@ -1,12 +1,37 @@
-    #map {
-        height: 400px;
-        width: 100%;
-       }
 
-input{
-    padding: 5px;
-    margin: 0 auto;
-    max-width: 600px;
+#container {
+    margin: 4%;
+
 }
 
+#header-img {
+    margin-bottom: 4%;
+    margin-top: 4%;
+    width: 75px;
+    height: 50px;
+}
+
+/*#home-icon {*/
+    /*margin-left: 2000%;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+/*}*/
+.navbar-brand {
+    font-family: "Times New Roman", Georgia, Serif;
+    display: inline-block;
+
+}
+
+#title {
+    margin-left: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#notification {
+    /*margin: 5%;*/
+}
 
