@@ -10,13 +10,34 @@
         });
       }
 
-	$.getJSON("https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json", function(data) {
-		console.log(typeof(data));
-		data.map(function(citation) {
-			(citation.latitude);
-		})
-  		// $.each(console.log(data.latitude + " " + data.longitude));
-  });
+    $.ajax({
+    url: "https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?color=RED&race=BLACK",
+    type: "GET",
+    data: {
+      "$limit" : 50,
+      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
+    	}
+	}).done(function(data){
+	  $("#notification").text("Retrieved " + data.length + " records from the dataset!");
+	  for (i in data) {
+	  	console.log(i);
+	  	console.log(data[i].color + " " + data[i].race);
+	  }
+	});
+
+	// $.getJSON("https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?race=BLACK", function(data) {
+	// 	console.log(data);
+ //  		// $.each(console.log(data.latitude + " " + data.longitude));
+ //  });
+
+	//noam 
+	//a function that will create a url 
+	var urlgen = function (lat,long) {
+		var url = "https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?$race=black&$limit=100";
+		return url;
+	};
+
+
 
 	//jordan
 	//a function that will parse the object returned from noam's url data fetch and build an array of objects containing lat longs
