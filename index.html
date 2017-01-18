@@ -8,25 +8,36 @@
 	<link rel="stylesheet" type="text/css" href="sexy.css">
 </head>
 <body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img id = "header-img" src="./images/brain.jpg" alt="Smiley face">
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="navbar-brand" id = "title">Drive sAIfely:An Innovative Solution for an Avoidable Problem</li>
+		</ul>
+	</div>
+</nav>
 <div id="map"></div>
 <h3 id ="notification"></h3>
 
 <!--//jordan information that they want to query-->
 	<!--hours of 8-10-->
 	<!--date -->
-
-<div class="container" id="user-form">
-	<form action="#">
-		<h2>To see traffic citations between:</h2>
-		<!--between 01/01/2012 to 01/01/2017-->
-		<input class="form-control" type="date" placeholder="01/01/2012" min="01/01/2012" max="01/01/2017">
-		<input class="form-control" type="date" placeholder="01/01/2017" min="01/01/2012" max="01/01/2017">
-		<br>
-		<input class="form-control" type="time" name="time" placeholder="Enter a time">
-		<input class="form-control" type="time" name="time" placeholder="Enter a time">
-		<br>
-		<input class="form-control btn btn-primary" type="submit">
-	</form>
+<div class="container">
+	<div id="user-form">
+		<form action="#">
+			<h2>To see traffic citations between:</h2>
+			<!--between 01/01/2012 to 01/01/2017-->
+			<input class="form-control" type="date" placeholder="01/01/2012" min="01/01/2012" max="01/01/2017">
+			<input class="form-control" type="date" placeholder="01/01/2017" min="01/01/2012" max="01/01/2017">
+			<br>
+			<input class="form-control" type="time" name="time" placeholder="Enter a time">
+			<input class="form-control" type="time" name="time" placeholder="Enter a time">
+			<br>
+			<input class="form-control btn btn-primary" type="submit">
+		</form>
+	</div>
 </div>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKY2xXXJx1cqQN69gn7yzzHTGy68t5ysg&callback=initMap">
