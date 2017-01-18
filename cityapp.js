@@ -80,3 +80,9 @@
     //Grab data from form,
     var formData=[$("#firstDate").val(),$("#secondDate").val(),$("#firstTime").val(),$("#secondTime").val()];
     console.log(formData);
+
+    //on submit event listener to butoon
+        //
+    if($("#firstTime.val")>$("#secondTime.val")){
+        alert("your first number is greater than the second.")
+    }
