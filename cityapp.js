@@ -47,3 +47,36 @@
 }
 
 	console.log(mymap.getMap());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Grab data from form,
+    var formData=[$("#firstDate").val(),$("#secondDate").val(),$("#firstTime").val(),$("#secondTime").val()];
+    console.log(formData);
