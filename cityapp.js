@@ -1,7 +1,7 @@
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+     function initMap() {
+        var uluru = {lat: 34.04, lng: 18.24};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
+          zoom: 5,
           center: uluru
         });
         var marker = new google.maps.Marker({
@@ -9,6 +9,22 @@
           map: map
         });
       }
+
+	$.getJSON("https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json", function(data) {
+		console.log(typeof(data));
+		data.map(function(citation) {
+			(citation.latitude);
+		})
+  		// $.each(console.log(data.latitude + " " + data.longitude));
+  });
+
+	//jordan
+	//a function that will parse the object returned from noam's url data fetch and build an array of objects containing lat longs
+
+
+
+	//shallin
+	//a function that will parse an array of lat longs and pass those through to the google map
 
 
 
