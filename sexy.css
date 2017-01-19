@@ -110,6 +110,11 @@ label {
 	
 }
 
+#submitForm{
+	margin-top: -10px;
+	margin-left:20px;
+}
+
 body {
     background-image: url("./images/blurred-background.jpg");
     background-repeat:no-repeat;

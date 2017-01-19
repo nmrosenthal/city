@@ -20,7 +20,8 @@
 		}).done(function(data){
 			console.log(data);
 			var ll = [];
-			$("#notification").text("Retrieved " + data.length + " Records From The Data Set!");
+			$("#status").text("MODERATE");
+			$("#notification").text("There were " + data.length + " speeding citations in this period!");
 			for (i in data) {
 				if(isNaN(data[i].latitude)===false && isNaN(data[i].longitude)===false) {
 			  	var latLng = new google.maps.LatLng(data[i].latitude, data[i].longitude);
