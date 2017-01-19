@@ -23,6 +23,16 @@ img {
     margin-bottom: 1%;
 }
 
+#risk-report {
+    width: 200px;
+    height: 125px;
+    background-color: #f46b42;
+    opacity: 0.9;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 3%;
+}
+
 #map {
     height: 500px;
     width: 100%;
