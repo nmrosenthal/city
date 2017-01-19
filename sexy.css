@@ -72,8 +72,8 @@ label {
     margin-right: auto;
     color: white;
     border-radius: 3px;
-    display: block;
-
+    display: inline-block;
+	
 }
 
 body {
