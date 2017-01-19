@@ -16,45 +16,50 @@ img {
 
 .page-header {
     text-align: center;
+    color: black;
+}
+#capitol-img {
+    margin-left: 2%;
+    margin-bottom: 1%;
 }
 
 #map {
-    height: 400px;
+    height: 500px;
     width: 100%;
+    border: 3px solid white;
 }
 
-#below-map-container {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e1e1e1+2,e1e1e1+2,f1f1f1+50,f6f6f6+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffffff 0%, #e1e1e1 2%, #e1e1e1 2%, #f1f1f1 50%, #f6f6f6 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#e1e1e1 2%,#e1e1e1 2%,#f1f1f1 50%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #ffffff 0%,#e1e1e1 2%,#e1e1e1 2%,#f1f1f1 50%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
-
-
-}
 
 #notification {
     margin-top: 2%;
     text-align: center;
     padding: 1%;
-    color: white;
+    color: #f5f5dc;
+    font-size: 20px;
 }
 
 #user-form {
-    margin-left: 15%;
+    border-radius: 25px;
     color: white;
+    background-color: #4286f4;
+    width: 75%;
+    margin: auto;
 }
 
 
 .boxStyling {
-    width: 100%;
-
     border-radius: 4px;
     box-sizing: border-box;
+    width: 100%;
+    box-shadow: 3px 3px 2px #092147;
 
 }
 
+.row {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
 
 .btn-primary {
     margin-left: auto;
@@ -66,21 +71,12 @@ img {
 }
 
 body {
-    background-image: url("https://images.pexels.com/photos/1587/blurred-background.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-image: url("./images/blurred-background.jpg");
     background-repeat:no-repeat;
     background-size:cover;
 
 }
 
-em {
-    color: #f16162;
-}
-
-.row {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
 
 #footer {
     text-align: center;

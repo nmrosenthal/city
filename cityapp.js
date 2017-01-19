@@ -23,7 +23,7 @@
 		      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
     		}
 		}).done(function(data){
-			$("#notification").text("Retrieved " + data.length + " Records from the Data Set!");
+			$("#notification").text("Retrieved " + data.length + " Records From The Data Set!");
 			for (i in data) {
 				// console.log(data[i].description);
 				// console.log(data[i].date_of_stop);
@@ -48,7 +48,7 @@
 
 	console.log(mymap.getMap());
 
-    
+
     //Grab data from form,
     var formData=[$("#firstDate").val(),$("#secondDate").val(),$("#firstTime").val(),$("#secondTime").val()];
     console.log(formData);
