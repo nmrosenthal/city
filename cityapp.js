@@ -1,14 +1,12 @@
-    var long = 0;
-    var lat = 39.02;
-    var mymap;
-    var heatmap;
+	var mymap;
+	var heatmap;
 
-    function initMap() {
-        var uluru = {lat: 39.1609, lng: -77.2206};
-        mymap = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
-          center: uluru
-        });
+	function initMap() {
+	    var montg = {lat: 39.1609, lng: -77.2206};
+	    mymap = new google.maps.Map(document.getElementById('map'), {
+	        zoom: 9,
+	        center: montg
+	    });
 	}
 
 	function displayData(firstD,secondD, firstT,secondT) {
@@ -46,7 +44,6 @@
     $("#submitForm").click(function() {
     	var firstDate = ($("#firstDate").val());
     	var secondDate = ($("#secondDate").val());
-    	console.log(firstDate);
     	var firstTime = ($("#firstTime").val()+":00");
     	var secondTime= ($("#secondTime").val()+":00");
     	displayData(firstDate,secondDate,firstTime,secondTime);
