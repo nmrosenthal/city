@@ -9,10 +9,9 @@
 	    });
 	}
 
-	function displayData(firstD,secondD, firstT,secondT) {
-		console.log("https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?color=RED&$where=description like '%25EXCEED%25' AND latitude > 39.02 AND longitude < 0 AND date_of_stop between '"+firstD+"T00:00:00' and '"+ secondD + "T00:00:00' AND time_of_stop between '" + firstT + "' and '" + secondT +"'");
+	function displayData(firstD,secondD) {
 		  	$.ajax({
-		    url: "https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?color=RED&$where=description like '%25EXCEED%25' AND latitude > 39.02 AND longitude < 0 AND date_of_stop between '"+firstD+"T00:00:00' and '"+ secondD + "T00:00:00'", 
+		    url: "https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?$where=description like '%25EXCEED%25' AND date_of_stop between '"+firstD+"T00:00:00' and '"+ secondD + "T00:00:00'",
 		    type: "GET",
 		    data: {
 		      "$limit" : 10000,
@@ -36,15 +35,30 @@
       	});
 	}
 
-	function toggleHeatmap() {
-        	mymap.setMap(heatmap.getMap() ? null : heatmap);
-      		};
 
-
-    $("#submitForm").click(function() {
-    	var firstDate = ($("#firstDate").val());
+    $("#submitForm").click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var firstDate = ($("#firstDate").val());
     	var secondDate = ($("#secondDate").val());
     	var firstTime = ($("#firstTime").val()+":00");
     	var secondTime= ($("#secondTime").val()+":00");
-    	displayData(firstDate,secondDate,firstTime,secondTime);
+    	displayData(firstDate,secondDate);
     });
+
+
+    // $( document ).ready(function() {
+    //     console.log( "ready!" );
+    //     var options_array = ["low", "medium", "high"];
+    //
+    //     for (var i = 0; i < options_array.length; i++) {
+    //         var options = $("<p/>");
+    //         options.text(options_array[i]);
+    //         options.css("color", "white");
+    //         console.log(options_array[i]);
+    //         if (options_array[i] === "high") {
+    //             options.css("color", "red");
+    //         }
+    //     }
+    //     $("#risk-report").append(options);
+    // });
