@@ -11,11 +11,11 @@
 
 	function displayData(firstD,secondD) {
 		  	$.ajax({
-		    url: "https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?$where=description like '%25EXCEED%25' AND date_of_stop between '"+firstD+"T00:00:00' and '"+ secondD + "T00:00:00'", 
-		    type: "GET",
-		    data: {
-		      "$limit" : 10000,
-		      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
+			    url: "https://data.montgomerycountymd.gov/resource/ms8i-8ux3.json?$where=description like '%25EXCEED%25' AND date_of_stop between '"+firstD+"T00:00:00' and '"+ secondD + "T00:00:00'", 
+			    type: "GET",
+			    data: {
+			      "$limit" : 10000,
+			      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
     		}
 		}).done(function(data){
 			console.log(data);

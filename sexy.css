@@ -14,14 +14,48 @@ img {
     font-size: 20px;
 }
 
+.col {
+    display: inline;
+}
+.col-xs-8 {
+    /*border: 1px solid white;*/
+}
+
 .page-header {
-    text-align: center;
     color: black;
 }
 #capitol-img {
     margin-left: 2%;
     margin-bottom: 1%;
 }
+
+#risk-report {
+    width: 225px;
+    height: 150px;
+    background-color: #eef5db;
+    opacity: 0.77;
+    float: right;
+    color: white;
+    border-radius: 5px;
+    margin-top: 3%;
+    font-family: sans-serrif;
+}
+
+#report-header {
+    padding: 4%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+}
+
+#report-content {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-top: 6%;
+}
+
 
 #map {
     height: 500px;
@@ -40,8 +74,8 @@ img {
 
 #user-form {
     border-radius: 25px;
-    background-color: #4286f4;
-    width: 75%;
+    background: rgba(0,0,0,0.1);
+    width: 100%;
     margin: auto;
 }
 
