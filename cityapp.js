@@ -18,7 +18,7 @@
 		      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
     		}
 		}).done(function(data){
-			$("#notification").text("There were " + data.length + " speeding violations in the selected time period.");
+			$("#notification").text("Retrieved " + data.length + " Records From The Data Set!");
 			for (i in data) {
 				// console.log(data[i].description);
 				// console.log(data[i].date_of_stop);
@@ -37,4 +37,17 @@
       });
 }
 
+
 	console.log(mymap);
+
+
+
+    //Grab data from form,
+    var formData=[$("#firstDate").val(),$("#secondDate").val(),$("#firstTime").val(),$("#secondTime").val()];
+    console.log(formData);
+
+    //on submit event listener to butoon
+        //
+    if($("#firstTime.val")>$("#secondTime.val")){
+        alert("your first number is greater than the second.")
+    }

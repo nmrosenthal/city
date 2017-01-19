@@ -9,36 +9,63 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<img id = "header-img" src="./images/brain.jpg" alt="AI Brain">
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="navbar-brand" id = "title">Drive s<b>AI</b>fely:A Visual Map of Speeding Citations in the Washington D.C. Area</li>
-			</ul>
+<nav class="navbar transparent navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<img class = "header-img" src="http://www.clker.com/cliparts/1/H/H/w/u/R/map-pin-red.svg" alt="marker" style="width:70px;height:55px;">
+			<span style = "color: white">Commute S(AI)fe</span>
 		</div>
-	</nav>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">Features</a></li>
+			<li class="active"><a href="https://dev.socrata.com/" target="_blank">Open Source Data</a></li>
+			<li><a href="https://www.google.co.il/maps?source=tldsi&hl=en" target="_blank">Maps</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+</nav>
 
 
 <div id = "container">
+	<div class="page-header">
+		<h1><b>A Visual Map of Speeding Citations in the Washington D.C. Area</b><img src="./images/capitol.png" alt = "capitol" id = "capitol-img"/></h1>
+		<h3><em>Discover citation hotspots <img src = "./images/car.png" alt="car" style="width:50px;height:40px;"> Plan your drive accordingly.</em></h3>
+	</div>
 	<div id="map"></div>
+	<div id = "below-map-container"></div>
 	<h3 id ="notification"></h3>
 	<div id="user-form">
-		<form action="#">
-			<h2>Choose a date:</h2>
-			<!--between 01/01/2012 to 01/01/2017-->
-			<input type="date" placeholder="01/01/2012" min="01/01/2012" max="01/01/2017">
-			<input type="date" placeholder="01/01/2017" min="01/01/2012" max="01/01/2017">
-			<br>
-			<h2>Choose a time:</h2>
-			<input type="time" name="time" placeholder="Enter a time">
-			<input type="time" name="time" placeholder="Enter a time">
-			<br>
-			<input class="btn-primary" type="submit">
-		</form>
+		<div class="row">
+			<form role="form" action = "#">
+				<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+					<label>Start Date</label>
+					<input type="date" placeholder="01/01/2012" min="01/01/2012" max="01/01/2017" class = "boxStyling" id="firstDate">
+				</div>
+				<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+					<label>End Date</label>
+					<input type="date" placeholder="01/01/2017" min="01/01/2012" max="01/01/2017" class = "boxStyling" id="secondDate">
+				</div>
+				<div class="clearfix"></div>
+				<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+					<label>Start Time</label>
+					<input type="number" name="time" placeholder="Enter a time:0-24" class = "boxStyling" id="firstTime">
+				</div>
+				<div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+					<label>End Time</label>
+					<input type="number" name="time" placeholder="Enter a time:0-24" class = "boxStyling" id="secondTime">
+				</div>
+				<input class="btn-primary" type="submit" id="submitForm">
+				</form>
+			</div>
+		</div>
+
+
+</div>
+<div id="footer">
+	<div class="container">
+		<p class="text-muted">© 2017 AI for better User Interface <a href="https://israeltechallenge.com">Israel Tech Challenge</a></p>
 	</div>
 </div>
+
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKY2xXXJx1cqQN69gn7yzzHTGy68t5ysg&libraries=visualization&callback=initMap"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

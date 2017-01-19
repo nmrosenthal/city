@@ -1,39 +1,84 @@
-
-#container {
-    margin: 4%;
-    text-align: center;
-    padding: 1%;
-
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.1);
 }
 
-#header-img {
-    margin-bottom: 4%;
-    margin-top: 4%;
+img {
+    padding: 5px;
     width: 75px;
     height: 50px;
 }
 
-/*#home-icon {*/
-    /*margin-left: 2000%;*/
-    /*width: 40px;*/
-    /*height: 40px;*/
-/*}*/
-.navbar-brand {
-    font-family: "Times New Roman", Georgia, Serif;
-    display: inline-block;
-
+#container {
+    margin: 4%;
+    padding: 1%;
+    font-size: 20px;
 }
 
-#title {
-    margin-left: 20px;
+.page-header {
+    text-align: center;
+    color: black;
+}
+#capitol-img {
+    margin-left: 2%;
+    margin-bottom: 1%;
 }
 
 #map {
-    height: 400px;
+    height: 500px;
     width: 100%;
+    border: 3px solid white;
+}
+
+
+#notification {
+    margin-top: 2%;
+    text-align: center;
+    padding: 1%;
+    color: #f5f5dc;
+    font-size: 20px;
+}
+
+#user-form {
+    border-radius: 25px;
+    color: white;
+    background-color: #4286f4;
+    width: 75%;
+    margin: auto;
+}
+
+
+.boxStyling {
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 3px 3px 2px #092147;
+
+}
+
+.row {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 .btn-primary {
-    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 3px;
+    display: block;
+
 }
 
+body {
+    background-image: url("./images/blurred-background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+
+#footer {
+    text-align: center;
+
+}
