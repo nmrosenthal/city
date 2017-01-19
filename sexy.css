@@ -40,19 +40,9 @@ img {
 
 #user-form {
     border-radius: 25px;
-    color: white;
     background-color: #4286f4;
     width: 75%;
     margin: auto;
-}
-
-
-.boxStyling {
-    border-radius: 4px;
-    box-sizing: border-box;
-    width: 100%;
-    box-shadow: 3px 3px 2px #092147;
-
 }
 
 .row {
@@ -60,6 +50,22 @@ img {
     width: 50%;
     padding: 10px;
 }
+
+.form-group {
+    width: 40%;
+}
+
+label {
+    color: white;
+}
+
+.boxStyling {
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 110%;
+    box-shadow: 3px 3px 2px #092147;
+}
+
 
 .btn-primary {
     margin-left: auto;
@@ -74,11 +80,9 @@ body {
     background-image: url("./images/blurred-background.jpg");
     background-repeat:no-repeat;
     background-size:cover;
-
 }
 
 
 #footer {
     text-align: center;
-
 }
