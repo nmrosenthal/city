@@ -1,32 +1,23 @@
-
-#container {
-    margin: 4%;
-    text-align: center;
-    padding: 1%;
-    font-size: 20px;
-
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.1);
 }
 
-.header-img {
-    margin-bottom: 4%;
-    margin-top: 4%;
+img {
     padding: 5px;
     width: 75px;
     height: 50px;
-
 }
 
-#title {
-    margin-left: 20px;
-    font-size: 25px;
-    color: black;
-    text-shadow: 2px 2px 8px #5F9EA0;
+#container {
+    margin: 4%;
+
+
+    padding: 1%;
+    font-size: 20px;
 }
 
-.navbar-brand {
-    font-family: "Times New Roman", Georgia, Serif;
-    display: block;
-
+.page-header {
+    text-align: center;
 }
 
 #map {
@@ -34,37 +25,34 @@
     width: 100%;
 }
 
-
-h4{
-    margin-bottom:-1%;
-    color: white;
-    font-family: "Times New Roman", Georgia, Serif;
+#below-map-container {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e1e1e1+2,e1e1e1+2,f1f1f1+50,f6f6f6+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #e1e1e1 2%, #e1e1e1 2%, #f1f1f1 50%, #f6f6f6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#e1e1e1 2%,#e1e1e1 2%,#f1f1f1 50%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#e1e1e1 2%,#e1e1e1 2%,#f1f1f1 50%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 
 }
 
 #notification {
-    font-size: 20px;
-    color: white;
-    font-family: "Times New Roman", Georgia, Serif;
-}
-.date-container {
-    display:inline-block;
-    margin-right: 6%;
+    margin-top: 2%;
+    text-align: center;
+    padding: 1%;
 }
 
-
-.time-container {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-
+#user-form {
+    margin-left: 15%;
 }
+
 
 .boxStyling {
     width: 100%;
-    border: 1px solid #ccc;
+
     border-radius: 4px;
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -73,13 +61,22 @@ h4{
     margin-right: auto;
     margin-top: 1%;
     color: white;
-    border-radius: 4px;
+    border-radius: 3px;
     display: block;
-
 
 }
 
 body {
-    background-color: black;
+    background-color: #F76B4C;
+
 }
 
+em {
+    color: #f16162;
+}
+
+.row {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
