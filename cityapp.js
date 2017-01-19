@@ -23,31 +23,25 @@
 				// console.log(data[i].description);
 				// console.log(data[i].date_of_stop);
 				// console.log(data[i].time_of_stop);
-			  	// console.log(data[i].color + " " + data[i].race + " " + data[i].latitude + " " + data[i].longitude);
+			 //  	console.log(data[i].color + " " + data[i].race + " " + data[i].latitude + " " + data[i].longitude);
 			  	var latLng = new google.maps.LatLng(data[i].latitude, data[i].longitude);
 			  	ll.push(latLng);        		
-	  	}
-	  	 heatmap = new google.maps.visualization.HeatmapLayer({
-          data: ll,
-          map: mymap
-        });
-	  	  function toggleHeatmap() {
-        heatmap.setMap(heatmap.getMap() ? null : map);
-      	}
-      });
-}
+	  		}
+	  	 	heatmap = new google.maps.visualization.HeatmapLayer({
+          		data: ll,
+          		map: mymap
+        	});
+      	});
+	}
+
+	function toggleHeatmap() {
+        	heatmap.setMap(heatmap.getMap() ? null : map);
+      		};
 
 
-	console.log(mymap);
-
-
-
-    //Grab data from form,
-    var formData=[$("#firstDate").val(),$("#secondDate").val(),$("#firstTime").val(),$("#secondTime").val()];
-    console.log(formData);
-
-    //on submit event listener to butoon
-        //
-    if($("#firstTime.val")>$("#secondTime.val")){
-        alert("your first number is greater than the second.")
-    }
+    $("#submitForm").click(function() {
+    	var firstDate = ($("#firstDate").val());
+    	var secondDate = ($("#secondDate").val());
+    	var firstTime = ($("#firstTime").val());
+    	var secondTime= ($("#secondTime").val());
+    });
