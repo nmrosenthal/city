@@ -116,7 +116,7 @@ label {
 }
 
 body {
-    background-image: url("./images/blurred-background.jpg");
+    background-image: url("../images/blurred-background.jpg");
     background-repeat:no-repeat;
     background-size:cover;
 }
