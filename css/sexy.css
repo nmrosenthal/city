@@ -111,8 +111,11 @@ label {
 }
 
 #submitForm{
-	margin-top: -10px;
-	margin-left:20px;
+	margin-left:45%;
+}
+
+#queryparameters{
+    display:inline-block;
 }
 
 body {

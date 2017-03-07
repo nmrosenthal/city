@@ -1,6 +1,16 @@
 	var mymap;
 	var heatmap;
 
+	$("#submitForm").click(function(e) {
+    	e.preventDefault();
+    	e.stopPropagation();
+    	var firstDate = ($("#firstDate").val());
+    	var secondDate = ($("#secondDate").val());
+    	var firstTime = ($("#firstTime").val()+":00");
+    	var secondTime= ($("#secondTime").val()+":00");
+    	displayData(firstDate,secondDate);
+    });
+
 	function initMap() {
 	    var montg = {lat: 39.1609, lng: -77.2206};
 	    mymap = new google.maps.Map(document.getElementById('map'), {
@@ -16,31 +26,20 @@
 			    data: {
 			      "$limit" : 10000,
 			      "$$app_token" : "EomQIfjQBBVCOkhua3dU0818w"
-    		}
-		}).done(function(data){
-			console.log(data);
-			var ll = [];
-			$("#status").text("MODERATE");
-			$("#notification").text("There were " + data.length + " speeding citations in this period!");
-			for (i in data) {
-				if(isNaN(data[i].latitude)===false && isNaN(data[i].longitude)===false) {
-			  	var latLng = new google.maps.LatLng(data[i].latitude, data[i].longitude);
-			  	ll.push(latLng);        		
-			  }
-	  		}
-	  	 	heatmap = new google.maps.visualization.HeatmapLayer({
+    			}
+			}).done(function(data){
+				console.log(data);
+				var ll = [];
+				$("#notification").text("There were " + data.length + " speeding citations in this period!");
+				for (i in data) {
+					if(isNaN(data[i].latitude)===false && isNaN(data[i].longitude)===false) {
+					  	var latLng = new google.maps.LatLng(data[i].latitude, data[i].longitude);
+					  	ll.push(latLng);        		
+				  }
+		  		}
+		  	 	heatmap = new google.maps.visualization.HeatmapLayer({
           		data: ll,
           		map: mymap
         	});
       	});
 	}
-
-    $("#submitForm").click(function(e) {
-    	e.preventDefault();
-    	e.stopPropagation();
-    	var firstDate = ($("#firstDate").val());
-    	var secondDate = ($("#secondDate").val());
-    	var firstTime = ($("#firstTime").val()+":00");
-    	var secondTime= ($("#secondTime").val()+":00");
-    	displayData(firstDate,secondDate);
-    });
